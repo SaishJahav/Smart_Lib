@@ -1,0 +1,674 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #168bd0;
+    --blue-light: #35a9ed;
+    --dark-card: rgba(13, 25, 38, 0.92);
+    --white: #ffffff;
+    --text-light: #d8dce0;
+    --text-muted: #8e9aa6;
+    --border: rgba(255, 255, 255, 0.28);
+}
+
+body {
+    min-height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    color: var(--white);
+
+    /* Replace library-bg.jpg with your actual image */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 12, 25, 0.75),
+            rgba(3, 12, 25, 0.35),
+            rgba(3, 12, 25, 0.75)
+        ),
+        url("library-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 7%;
+}
+
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.library-intro {
+    width: 50%;
+    padding-right: 80px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 70px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(22, 139, 208, 0.9);
+    border-radius: 12px;
+
+    font-size: 23px;
+}
+
+.logo-icon img{
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 27px;
+
+
+}
+
+
+/* INTRO TEXT */
+
+.intro-content {
+    max-width: 550px;
+}
+
+.small-heading {
+    color: var(--blue-light);
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.intro-content h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.intro-content h1 span {
+    color: var(--blue-light);
+}
+
+.intro-text {
+    max-width: 480px;
+
+    color: var(--text-light);
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 10px;
+
+    font-size: 20px;
+}
+
+.feature h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.feature p {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.auth-section {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ================================
+   AUTH CARD
+================================ */
+
+.auth-card {
+    width: 430px;
+
+    padding: 38px 42px;
+
+    background: var(--dark-card);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* ================================
+   FORM SWITCHING
+================================ */
+
+/*
+   Login is visible initially.
+   Register remains hidden until JS
+   adds the "active" class.
+*/
+
+.register-form {
+    display: none;
+}
+
+.login-form.active,
+.register-form.active {
+    display: block;
+}
+
+
+/* ================================
+   FORM HEADING
+================================ */
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.form-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.form-heading p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+
+/* ================================
+   GOOGLE BUTTON
+================================ */
+
+.google-btn {
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: var(--white);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.google-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+
+    transform: translateY(-2px);
+}
+
+.google-icon {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    color: #4285f4;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ================================
+   DIVIDER
+================================ */
+
+.divider {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 25px 0;
+
+    color: #74808c;
+
+    font-size: 11px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ================================
+   INPUT GROUP
+================================ */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    color: #d9dee3;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   INPUT
+================================ */
+
+.input-group input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 14px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    color: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.input-group input::placeholder {
+    color: #68747f;
+}
+
+.input-group input:focus {
+    border-color: var(--blue);
+
+    background: rgba(22, 139, 208, 0.05);
+
+    box-shadow: 0 0 0 3px rgba(22, 139, 208, 0.1);
+}
+
+
+/* ================================
+   PASSWORD
+================================ */
+
+.password-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+.password-label label {
+    margin-bottom: 0;
+}
+
+.password-label a {
+    color: var(--blue-light);
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.password-label a:hover {
+    text-decoration: underline;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    padding-right: 48px;
+}
+
+.toggle-password {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #9aa5af;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.toggle-password:hover {
+    color: white;
+}
+
+
+/* ================================
+   PRIMARY BUTTON
+================================ */
+
+.primary-btn {
+    width: 100%;
+    height: 48px;
+
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: linear-gradient(
+        135deg,
+        #147fbe,
+        #2199dc
+    );
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(22, 139, 208, 0.2);
+
+    transition: 0.25s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(22, 139, 208, 0.35);
+}
+
+.primary-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   SWITCH LOGIN / REGISTER
+================================ */
+
+.switch-form {
+    text-align: center;
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    margin-top: 25px;
+}
+
+.switch-form button {
+    border: none;
+
+    background: transparent;
+
+    color:var(--blue-light);
+
+    font-family: inherit;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-left: 4px;
+}
+
+.switch-form button:hover {
+    text-decoration: underline;
+}
+
+.auth-link{
+    color: #149bd7;
+    text-decoration: none;
+}
+
+.auth-link:hover{
+    color: #35b5ee;
+    text-decoration: underline;
+}
+
+/* ================================
+   FORM MESSAGE
+================================ */
+
+.form-message {
+    min-height: 18px;
+
+    color: #ff6b6b;
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .auth-container {
+        flex-direction: column;
+
+        padding: 40px 20px;
+    }
+
+    .library-intro {
+        width: 100%;
+
+        padding-right: 0;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        justify-content: center;
+
+        margin-bottom: 40px;
+    }
+
+    .intro-content {
+        margin: auto;
+    }
+
+    .intro-content h1 {
+        font-size: 42px;
+    }
+
+    .intro-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features {
+        display: none;
+    }
+
+    .auth-section {
+        width: 100%;
+    }
+
+    .auth-card {
+        width: 100%;
+        max-width: 430px;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    body {
+        background-position: center;
+    }
+
+    .auth-container {
+        padding: 25px 15px;
+    }
+
+    .library-intro {
+        margin-bottom: 25px;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .intro-content h1 {
+        font-size: 34px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .form-heading h2 {
+        font-size: 26px;
+    }
+} 

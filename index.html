@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Library | Login</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <!-- Left Section -->
+        <section class="library-intro">
+
+            <div class="logo">
+                <div class="logo-icon"><img src="IMG/lib_bg.jpg.jpeg" alt=""></div>
+                <span>Smart Library</span>
+            </div>
+
+            <div class="intro-content">
+                <p class="small-heading">YOUR DIGITAL LIBRARY</p>
+
+                <h1>
+                    Find your next
+                    <span>great read.</span>
+                </h1>
+
+                <p class="intro-text">
+                    Discover books available in your local library,
+                    reserve them online, and collect them with a
+                    simple reservation code.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <div class="feature-icon">🔎</div>
+                        <div>
+                            <h3>Discover</h3>
+                            <p>Find books available near you.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">📖</div>
+                        <div>
+                            <h3>Reserve</h3>
+                            <p>Reserve your book before visiting.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">🎟️</div>
+                        <div>
+                            <h3>Collect</h3>
+                            <p>Show your unique code to collect.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Right Section -->
+        <section class="auth-section">
+
+            <div class="auth-card">
+
+                <!-- Login Form -->
+                <div class="form-container login-form active">
+
+                    <div class="form-heading">
+                        <h2>Welcome back</h2>
+                        <p>Login to continue to Smart Library.</p>
+                    </div>
+
+                    <button class="google-btn" type="button">
+                        <span class="google-icon">G</span>
+                        Continue with Google
+                    </button>
+
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+
+                    <form id="loginForm">
+
+                        <div class="input-group">
+                            <label for="loginEmail">Email</label>
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <div class="password-label">
+                                <label for="loginPassword">Password</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+
+                            <div class="password-input">
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    placeholder="Enter your password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="toggle-password"
+                                    onclick="showpass()"
+                                >
+                                    👁
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="form-message" id="loginMessage"></p>
+
+                        <button class="primary-btn" type="submit">
+                            Login
+                        </button>
+
+                    </form>
+
+                    <p class="switch-form">
+                        Don't have an account?
+                        <button type="button" id="showRegister"><a href="register.html" class="auth-link">
+                            Create account
+                            </a>
+                        </button><br>
+                        <button type="button" id="ToHome"><a href="fbooks.html" class="auth-link">
+                            Click Here To Explore!
+                            </a>
+                        </button>
+                    </p>
+
+                </div>
+
+
+                      </section>
+
+    </main>
+
+
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
