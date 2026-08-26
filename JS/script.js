@@ -27,15 +27,13 @@ function scrollb(direction) {
     books.scrollLeft =
         books.scrollLeft + (direction * 300);
 
-
+}
+function scrollb1(direction) {
     let books1 = document.getElementById("book-container2");
 
     books1.scrollLeft =
         books1.scrollLeft + (direction * 240);
-
 }
-
-
 /* JQUERY */
 
 $(document).ready(function() {
