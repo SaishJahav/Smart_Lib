@@ -398,27 +398,99 @@ header a {
 
 /* Mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-    body{
+    header {
         height: auto;
+
+        padding: 10px 5%;
+
+        flex-direction: column;
+
+        gap: 10px;
     }
-    
-  
+
+
+    nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+
+    nav a {
+        padding: 7px 14px;
+
+        font-size: 12px;
+    }
+
+
+    .welcome {
+        padding: 40px 15px;
+    }
+
+
     .welcome h2 {
         font-size: 30px;
     }
+
+
+    .welcome p {
+        font-size: 15px;
+    }
+
 
     .welcome input {
         width: 90%;
     }
 
-    .book {
-        width: 160px;
+
+    .welcome input:hover {
+        width: 95%;
     }
 
-    .book img {
-        height: 220px;
+
+    .books1 {
+        padding: 30px 3%;
     }
+
+
+    .book-container1 {
+        gap: 20px;
+    }
+
+
+    .book {
+        flex-basis: 180px;
+
+        width: 180px;
+
+        min-height: 420px;
+    }
+
+
+    .book img {
+        height: 250px;
+    }
+
+
+    .scroll-btn {
+        flex: 0 0 35px;
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 18px;
+    }
+
+
+    .popup-content {
+        width: 90%;
+    }
+
 }
 
