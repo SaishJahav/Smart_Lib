@@ -27,6 +27,12 @@ function scrollb(direction) {
     books.scrollLeft =
         books.scrollLeft + (direction * 300);
 
+
+    let books1 = document.getElementById("book-container2");
+
+    books1.scrollLeft =
+        books1.scrollLeft + (direction * 240);
+
 }
 
 
