@@ -147,9 +147,7 @@ body {
 }
 
 
-/* ================================
-   FEATURES
-================================ */
+/* FEATURES */
 
 .features {
     display: flex;
@@ -192,9 +190,7 @@ body {
 }
 
 
-/* ================================
-   RIGHT SIDE
-================================ */
+/* RIGHT SIDE */
 
 .auth-section {
     width: 50%;
@@ -634,41 +630,3 @@ body {
 }
 
 
-/* ================================
-   SMALL MOBILE
-================================ */
-
-@media (max-width: 480px) {
-
-    body {
-        background-position: center;
-    }
-
-    .auth-container {
-        padding: 25px 15px;
-    }
-
-    .library-intro {
-        margin-bottom: 25px;
-    }
-
-    .logo {
-        margin-bottom: 25px;
-    }
-
-    .intro-content h1 {
-        font-size: 34px;
-    }
-
-    .intro-text {
-        font-size: 14px;
-    }
-
-    .auth-card {
-        padding: 30px 22px;
-    }
-
-    .form-heading h2 {
-        font-size: 26px;
-    }
-} 

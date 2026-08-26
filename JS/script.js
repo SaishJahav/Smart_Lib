@@ -1,24 +1,87 @@
-function showpass(){
+/* PASSWORD */
 
-    let password=document.getElementById("loginPassword");
+function showpass() {
 
-    if(password.type === "password"){
+    let password = document.getElementById("loginPassword");
 
-        password.type="text"
+    if (password.type == "password") {
+
+        password.type = "text";
+
     }
-    else{
-        password.type="password"
-    }
+    else {
 
+        password.type = "password";
+
+    }
 
 }
 
-function scrollb(direction){
 
-    let books=document.getElementById("book-container");
+/* BOOK SCROLL */
 
-    books.scrollLeft = books.scrollLeft + (direction * 300);
+function scrollb(direction) {
 
-    
+    let books = document.getElementById("book-container1");
+
+    books.scrollLeft =
+        books.scrollLeft + (direction * 300);
 
 }
+
+
+/* JQUERY */
+
+$(document).ready(function() {
+
+
+    /* Reserve Button */
+
+    $(".reserveBtn").click(function() {
+
+        let book = $(this).data("book");
+
+        $("#bookName").text(book);
+
+        $("#userName").val("");
+
+        $("#reservationCode").text("");
+
+        $("#popup").css("display", "flex");
+
+    });
+
+
+    /* Close Popup */
+
+    $("#close").click(function() {
+
+        $("#popup").css("display", "none");
+
+    });
+
+
+    /* Confirm Reservation */
+
+    $("#confirmReservation").click(function() {
+
+        let name = $("#userName").val();
+
+        if (name == "") {
+
+            alert("Please enter your name");
+
+            return;
+
+        }
+
+
+        let code =
+            "SL" + (Math.floor(Math.random() * 9000) + 1000);
+
+
+        $("#reservationCode").text(code);
+
+    });
+
+});
