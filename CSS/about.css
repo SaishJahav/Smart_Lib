@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: auto;
+
+    background: linear-gradient(
+        #116b8c,
+        #6faabd,
+        #dceff5,
+        #f5f8fa
+    );
+}
+
+
+/* Header */
+
+    header {
+        height: 70px;
+        width: 100%;
+        display: contents;
+        position:fixed;
+        top: 0%;
+        padding: 0 6%;
+        border:solid 1px;
+        border-color:#159bd3;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        background: rgba(17, 107, 140, 0.85);
+        
+        color: white;
+    }
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+
+    background-color: white;
+    border-radius: 8px;
+}
+
+.logo h1 {
+    font-size: 22px;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    background: #159bd3;
+
+    padding: 9px 20px;
+
+    border-radius: 20px;
+}
+
+nav a:hover {
+    color: white;
+    background: #087db2;
+}
+
+
+/* Login button */
+
+nav .login {
+    background: #159bd3;
+    padding: 9px 20px;
+    border-radius: 20px;
+}
+
+nav .login:hover {
+    color: white;
+    background: #087db2;
+}
+
+
+/* Hero */
+
+.hero {
+    margin-top: 50px;
+    text-align: center;
+    padding: 55px 20px;
+    color: white;
+}
+
+
+/* Main container */
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    height: auto;
+}
+
+
+/* Main heading */
+
+.container h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Common box size */
+
+.head,
+.goal,
+.list {
+    width: 80%;
+    max-width: 900px;
+
+    margin: 10px auto;
+
+    background: #dceff5;
+
+    border-radius: 20px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* About Smart Library */
+
+.head {
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
+.head h2 {
+    color: #116b8c;
+    font-size: 28px;
+}
+
+.head h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: dimgrey;
+
+    font-size: 20px;
+
+    max-width: 750px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* Our Goal */
+
+.goal {
+    padding: 25px;
+    line-height: 1.5;
+}
+
+.goal h2 {
+    color: #116b8c;
+    font-size: 30px;
+}
+
+.goal h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: dimgrey;
+
+    font-size: 20px;
+
+    max-width: 750px;
+    margin: 20px auto 0;
+
+    text-align: center;
+}
+
+
+/* What We Offer */
+
+.list {
+    padding: 25px;
+    line-height: 1.5;
+}
+
+.list h2 {
+    color: #116b8c;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Offer list */
+
+.offer-list {
+    width: 500px;
+    max-width: 100%;
+
+    margin: 10px auto;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    line-height: 2;
+
+    list-style: none;
+}
+
+.offer-list li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: dimgrey;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+.foot {
+    height: 40px;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    background-color: #087db2;
+
+    color: white;
+
+    width: 100%;
+}
+
+.foot h4 {
+    text-align: center;
+
+    padding: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: normal;
+
+    font-size: 18px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+
+        padding: 10px 5%;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 7px 14px;
+
+        font-size: 12px;
+    }
+
+    .head,
+    .goal,
+    .list {
+        width: 95%;
+    }
+
+    .head h3,
+    .goal h3 {
+        font-size: 18px;
+    }
+
+    .offer-list {
+        width: 100%;
+    }
+
+    .offer-list li {
+        font-size: 18px;
+    }
+}
