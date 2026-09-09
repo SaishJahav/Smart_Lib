@@ -89,3 +89,41 @@ $(document).ready(function() {
     });
 
 });
+
+function msgbox(){
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let msg = document.getElementById("msg").value;
+    
+    if (name == "" || email == "" || subject == "" || msg == "") {
+
+      alert("Please fill all the fields.");
+    }
+
+    else {
+
+        document.getElementById("contactForm").reset();
+        alert("Message Submitted Succesfully!");
+        
+        }
+    
+};
+
+function rateBook(rating, clickedStar){
+
+    //alert("Rating: "+rating)
+
+    let stars = clickedStar.parentElement.querySelectorAll("button");
+
+    for(let i=0;i<stars.length;i++){
+
+        if(i<rating){
+            stars[i].style.setProperty("color","gold","important");
+        }
+        else{
+            stars[i].style.setProperty("color","gray","important");
+        }
+    }
+}

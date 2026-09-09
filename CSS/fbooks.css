@@ -304,9 +304,9 @@ header a {
 /* Individual Book */
 
 .book {
-    width: 300px;
+    width: 350px;
 
-    height: 400px;
+    height: 450px;
 
     background: white;
 
@@ -362,7 +362,7 @@ header a {
 
 /* Availability */
 
-.book span {
+.book .ava {
     display: inline-block;
 
     padding: 5px 10px;
@@ -375,6 +375,28 @@ header a {
 
     font-size: 12px;
 }
+
+/* Rating */
+.rating{
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+    margin-top: 7px;
+}
+.rating button{
+    color: gray !important;
+    background: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+
+}
+.rating button:hover{
+    color: gold !important;
+}
+
 
 .foot{
 

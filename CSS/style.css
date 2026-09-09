@@ -24,20 +24,14 @@ body {
     color: var(--white);
 
     /* Replace library-bg.jpg with your actual image */
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(3, 12, 25, 0.75),
-            rgba(3, 12, 25, 0.35),
-            rgba(3, 12, 25, 0.75)
-        ),
-        url("library-bg.jpg");
-
+    background-image:linear-gradient(rgba(0,0,0,0.58)),url("/IMG/log_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
+
+
 
 
 /* ================================

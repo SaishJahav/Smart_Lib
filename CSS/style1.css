@@ -9,16 +9,10 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-image:
-        linear-gradient(
-            rgba(5, 15, 25, 0.55),
-            rgba(5, 15, 25, 0.55)
-        ),
-        url("library-bg.jpg");
-
+    background-image:linear-gradient(rgba(0,0,0,0.58)),url("/IMG/log_bg.jpeg");
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
