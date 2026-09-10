@@ -574,6 +574,12 @@ body {
 
 @media (max-width: 900px) {
 
+    body{
+        background-position: center;
+        background-size: cover;
+        inset: 0;
+    }
+
     .auth-container {
         flex-direction: column;
 

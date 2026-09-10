@@ -11,13 +11,19 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     height: auto;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(
         #116b8c,
         #6faabd,
         #dceff5,
         #f5f8fa
     );
+}
+html, body{
+    min-height: 100%;
+    margin: 0;
 }
 
 
@@ -264,7 +270,7 @@ nav .login:hover {
 .foot {
     height: 40px;
 
-    margin-top: 20px;
+    margin-top: auto;
 
     text-align: center;
 

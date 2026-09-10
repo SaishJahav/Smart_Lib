@@ -5,11 +5,16 @@
     scroll-behavior: smooth;
 }
 
-
+html, body{
+    min-height: 100%;
+    margin: 0;
+}
 body {
     font-family: Arial, sans-serif;
     color: #333;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(
         #116b8c,
         #6faabd,
@@ -268,11 +273,13 @@ nav a:hover {
 /* Book Information */
 
 .book h3 {
-    margin-top: 10px;
+    margin-top: 14px;
 
     color: #116b8c;
 
-    font-size: 16px;
+    font-size: 18px;
+
+    font-weight: bold;
 }
 
 
@@ -281,7 +288,7 @@ nav a:hover {
 
     color: #777;
 
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -370,14 +377,14 @@ nav a:hover {
 
 /* Buy */
 
-.btn-warning {
+.btn{
     background-color: #05506b !important;
 
     color: white !important;
 }
 
 
-.btn-warning:hover {
+.btn:hover{
     background-color: #087db2 !important;
 
     color: white !important;

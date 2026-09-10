@@ -127,3 +127,9 @@ function rateBook(rating, clickedStar){
         }
     }
 }
+
+function buy(){
+
+    alert("You Can Reserve The Book Now Payment Should Be Done At Store. Details Of Store Are Given In Contact Section.");
+    
+}
